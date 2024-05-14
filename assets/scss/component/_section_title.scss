@@ -1,0 +1,9 @@
+@use '../utils' as *;
+
+.tp-section-title{
+    font-size: 60px;
+    line-height: 1.16;
+    &-white{
+        color: #fff;
+    }
+}
