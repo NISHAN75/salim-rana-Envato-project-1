@@ -1,1 +1,1 @@
-sass --watch "D:\learn part\salim rana\Envato\Header Part Start Class 10 Part 01\sass-pack-2024\assets\scss\main.scss":"D:\learn part\salim rana\Envato\Header Part Start Class 10 Part 01\sass-pack-2024\assets\css\style.css"
+sass --watch D:\learn-part\salim-rana\project-1\assets\scss\main.scss:D:\learn-part\salim-rana\project-1\assets\css\style.css

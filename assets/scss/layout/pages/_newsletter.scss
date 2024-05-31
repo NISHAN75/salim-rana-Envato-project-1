@@ -1,5 +1,51 @@
 @use '../../utils' as *;
-.tp-nesletter-bg{
-    padding: 80px 0;
-    border-radius: 20px;
+
+.tp-newsletter{
+    &-margin{
+        margin-top: -110px;
+    }
+    &-bg{
+        padding: 80px;
+        border-radius: 20px;
+    }
+    &-box{
+        & form{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+        & input[type="email"]{
+            border-color: #fff;
+            color: #fff;
+            width: 100%;
+            &:focus{
+                border-color: #fff;
+            }
+            @include tp-placeholder{
+                color: #fff;
+            }
+        }
+        & .tp-btn-sec-lg {
+            padding: 16.5px 38px;
+        }
+
+    }
+    &-input{
+        width: calc(100% - 205px);
+        & img{
+            position: absolute;
+            right: 20px;
+            top: 22px;
+        }
+    }
+    &-back {
+        color: #fff;
+        font-size: 100px;
+        opacity: 0.1;
+        position: absolute;
+        left: 83px;
+        bottom: -23px;
+        line-height: 1;
+        margin: 0;
+    }
 }

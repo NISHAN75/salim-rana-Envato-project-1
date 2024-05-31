@@ -164,7 +164,6 @@
   line-height: 1.5;
   display: inline-block;
 }
-
 .tp-btn-sec-lg {
   padding: 21.5px 48px;
 }
@@ -173,7 +172,6 @@
   font-size: 60px;
   line-height: 1.16;
 }
-
 .tp-section-title-white {
   color: #fff;
 }
@@ -310,7 +308,6 @@ textarea {
   text-transform: uppercase;
   font-weight: 500;
 }
-
 input[type=text]::-webkit-input-placeholder,
 input[type=email]::-webkit-input-placeholder,
 input[type=tel]::-webkit-input-placeholder,
@@ -320,7 +317,6 @@ input[type=url]::-webkit-input-placeholder,
 textarea::-webkit-input-placeholder {
   color: #95999d;
 }
-
 input[type=text]:-moz-placeholder,
 input[type=email]:-moz-placeholder,
 input[type=tel]:-moz-placeholder,
@@ -330,7 +326,6 @@ input[type=url]:-moz-placeholder,
 textarea:-moz-placeholder {
   color: #95999d;
 }
-
 input[type=text]::-moz-placeholder,
 input[type=email]::-moz-placeholder,
 input[type=tel]::-moz-placeholder,
@@ -340,7 +335,6 @@ input[type=url]::-moz-placeholder,
 textarea::-moz-placeholder {
   color: #95999d;
 }
-
 input[type=text]::-ms-input-placeholder,
 input[type=email]::-ms-input-placeholder,
 input[type=tel]::-ms-input-placeholder,
@@ -350,7 +344,6 @@ input[type=url]::-ms-input-placeholder,
 textarea::-ms-input-placeholder {
   color: #95999d;
 }
-
 input[type=text]:focus,
 input[type=email]:focus,
 input[type=tel]:focus,
@@ -360,7 +353,6 @@ input[type=url]:focus,
 textarea:focus {
   border-color: var(--tp-common-black);
 }
-
 input[type=text]:focus::placeholder,
 input[type=email]:focus::placeholder,
 input[type=tel]:focus::placeholder,
@@ -4498,7 +4490,6 @@ img {
   margin-right: 42px;
   position: relative;
 }
-
 .tp-main-menu ul li a {
   font-size: 18px;
   color: white;
@@ -4507,7 +4498,6 @@ img {
   display: inline-block;
   transition: all 0.3s linear;
 }
-
 .tp-main-menu ul li .sub-menu {
   position: absolute;
   left: 0;
@@ -4519,12 +4509,10 @@ img {
   visibility: hidden;
   transition: all 0.3s linear;
 }
-
 .tp-main-menu ul li .sub-menu li {
   display: block;
   margin-right: 0;
 }
-
 .tp-main-menu ul li .sub-menu li a {
   color: #000;
   display: block;
@@ -4532,27 +4520,22 @@ img {
   font-size: 17px;
   transition: all 0.3s linear;
 }
-
 .tp-main-menu ul li .sub-menu li .sub-menu {
   left: 100%;
   top: 0;
   opacity: 0;
   visibility: hidden;
 }
-
 .tp-main-menu ul li .sub-menu li:hover > a {
   color: #0057FC;
 }
-
 .tp-main-menu ul li .sub-menu li:hover > .sub-menu {
   opacity: 1;
   visibility: visible;
 }
-
 .tp-main-menu ul li:hover a {
   color: var(--tp-theme-color-2);
 }
-
 .tp-main-menu ul li:hover .sub-menu {
   opacity: 1;
   visibility: visible;
@@ -4562,23 +4545,19 @@ img {
 .tp-header-border {
   border-bottom: 1px solid rgba(255, 255, 255, 0.15);
 }
-
 .tp-header-search {
   margin-right: 40px;
 }
-
 .tp-header-bar button {
   background: #23252D;
   padding: 40px 25px;
 }
-
 .tp-header-cta {
   display: flex;
   align-items: center;
   padding: 28px 40px;
   border-left: 1px solid rgba(255, 255, 255, 0.15);
 }
-
 .tp-header-cta-text span {
   font-size: 15px;
   line-height: 1;
@@ -4586,14 +4565,12 @@ img {
   margin-bottom: 15px;
   display: block;
 }
-
 .tp-header-cta-text h4 {
   font-size: 18px;
   line-height: 1.3;
   color: #fff;
   margin-bottom: 0;
 }
-
 .tp-header-cta-icon {
   margin-right: 15px;
 }
@@ -4604,14 +4581,12 @@ img {
   text-transform: uppercase;
   margin-bottom: 0;
 }
-
 .tp-hero-title span {
   background: radial-gradient(42.24% 2817.5% at 52.45% 54.17%, rgba(255, 232, 21, 0.95) 0%, #3C7FFF 100%);
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
-
 .tp-hero-title i {
   color: #B1B4BA;
   font-size: 30px;
@@ -4699,46 +4674,14 @@ img {
   line-height: 75px;
   display: inline-block;
 }
-
 .tp-about-video h4 {
   font-size: 30px;
   color: #57595c;
 }
 
 .tp-nesletter-bg {
-  padding: 80px;
+  padding: 80px 0;
   border-radius: 20px;
 }
 
-.tp-nesletter-box input {
-  border-color: #fff;
-  color: #fff;
-}
-
-.tp-nesletter-box input:focus {
-  border-color: #fff;
-}
-
-.tp-nesletter-box input:focus::placeholder {
-  opacity: 0;
-}
-
-.tp-nesletter-box input::-webkit-input-placeholder {
-  color: #fff;
-}
-
-.tp-nesletter-box input:-moz-placeholder {
-  color: #fff;
-}
-
-.tp-nesletter-box input::-moz-placeholder {
-  color: #fff;
-}
-
-.tp-nesletter-box input::-ms-input-placeholder {
-  color: #fff;
-}
-
-
-
-/*# sourceMappingURL=main.js.map */
+/*# sourceMappingURL=main.css.map */

@@ -138,7 +138,12 @@
         <!-- tp-hero-area section end -->
 
         <!-- tp-about-area section start -->
-        <section class="tp-about-area pt-130 pb-135">
+        <section class="tp-about-area pt-130 pb-135 p-relative z-1" style="background-image: url('assets/img/bg/about-section-bg.jpg');">
+            <div class="tp-header-shape">
+                <img class="tp-about-shape-1 p-absolute" src="assets/img/shape/about-start-1.svg" alt="big cricle">
+                <img class="tp-about-shape-2 p-absolute" src="assets/img/shape/about-start-2.svg" alt="big cricle">
+                <img class="tp-about-shape-3 p-absolute" src="assets/img/shape/about-start-3.svg" alt="big cricle">
+            </div>
             <div class="container">
                 <div class="row">
                     <div class="col-lg-6">
@@ -181,9 +186,10 @@
         <!-- tp-about-area section end -->
 
         <!-- tp newsletter section start -->
-        <div class="tp-newsletter-area ">
+        <div class="tp-newsletter-area tp-newsletter-margin p-relative z-1">
+
             <div class="container">
-                <div class="tp-nesletter-bg tp-blue-bg">
+                <div class="tp-newsletter-bg tp-blue-bg">
                     <div class="row">
                         <div class="col-xl-4">
                             <div class="tp-section-title-wrapper">
@@ -191,9 +197,13 @@
                             </div>
                         </div>
                         <div class="col-xl-8">
-                            <div class="tp-newsletter-box">
+                            <div class="tp-newsletter-box p-relative">
+                                <h2 class="tp-newsletter-back">Newsletter</h2>
                                 <form action="#">
-                                    <input type="email" placeholder="Email Here">
+                                    <div class="tp-newsletter-input p-relative">
+                                        <input type="email" placeholder="Email Here">
+                                        <img src="assets/img/icon/plane-arrow.svg" alt="....">
+                                    </div>
                                     <button class="tp-btn-sec tp-btn-sec-lg">Subscribe Now</button>
                                 </form>
                             </div>
@@ -203,6 +213,22 @@
             </div>
         </div>
         <!-- tp newsletter section end -->
+
+        <!-- tp services area section start -->
+        <section class="tp-services-area tp-130">
+            <div class="container">
+                <div class="tp-section-title-wrapper mb-33 text-center">
+                    <h2 class="tp-section-title mb-20">
+                        Popular services
+                    </h2>
+                    <p>
+                        Per ipsum ultrices sollicitudin iaculis platea facilisi semper aliquam up<br> senectus cursus vivamus volutpat penatibus
+                    </p>
+                </div>
+                <div class="row"></div>
+            </div>
+        </section>
+        <!-- tp services area section end -->
 
 
     </main>
