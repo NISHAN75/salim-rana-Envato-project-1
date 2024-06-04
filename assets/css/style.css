@@ -155,7 +155,6 @@
   display: inline-block;
   color: var(--tp-white);
 }
-
 .tp-btn-sec {
   font-size: 18px;
   font-family: var(--tp-font-heading);
@@ -167,6 +166,17 @@
 }
 .tp-btn-sec-lg {
   padding: 21.5px 48px;
+}
+.tp-btn-circle {
+  font-family: var(--tp-font-heading);
+  font-size: 60px;
+  color: #fff;
+  opacity: 0.3;
+  border: 2px solid rgba(255, 255, 255, 0.2);
+  padding: 48px 75px;
+  display: inline-block;
+  line-height: 1;
+  border-radius: 100%;
 }
 
 .tp-section-title {
@@ -447,6 +457,10 @@ textarea {
 
 .tp-blue-bg {
   background-color: var(--tp-theme-color);
+}
+
+.tp-nblue-bg {
+  background-color: var(--tp-theme-nblue);
 }
 
 .bg-fix {
@@ -4705,6 +4719,23 @@ img {
   left: 35%;
 }
 
+.tp-project-tab button {
+  color: #fff;
+  font-size: 100px;
+  font-family: var(--tp-fonts-heading);
+  line-height: 1.2;
+  border-bottom: 1px solid #2F446B;
+  padding: 13px 35px 13px 100px;
+  transition: all 0.3s linear;
+}
+.tp-project-tab button.active {
+  border-color: var(--tp-theme-color-2);
+  color: var(--tp-theme-color-2);
+}
+.tp-project-tab-thumb img {
+  border-radius: 20px;
+}
+
 .tpservices {
   margin-right: -1px;
   border: 1px solid #57595C;
@@ -4752,6 +4783,57 @@ img {
 }
 .tp-sv-btn i {
   transform: rotate(-45deg);
+}
+
+.tp-testimonial-shape {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 50px;
+  z-index: -1;
+}
+.tp-testimonial-shape img {
+  max-width: 638px;
+}
+.tp-testimonial-desc {
+  font-size: 100px;
+}
+.tp-testimonial-name {
+  font-size: 30px;
+  margin-bottom: 5px;
+}
+.tp-testimonial-desig {
+  color: #57595c;
+  font-size: 17px;
+}
+.tp-testimonial-desig span {
+  height: 1px;
+  width: 60px;
+  background: #57595c;
+  display: inline-block;
+  transform: translateY(-5px);
+  margin-right: 5px;
+}
+
+.tp-swiper-test-button {
+  position: absolute;
+  left: -100px;
+  top: 34%;
+}
+.tp-swiper-test-button-next {
+  left: auto;
+  right: -100px;
+}
+
+.tp-testimonial-shape-thumb-1 {
+  top: 115px;
+  left: 0;
+  max-width: 266px;
+}
+.tp-testimonial-shape-thumb-2 {
+  right: 0;
+  top: 34px;
+  max-width: 266px;
 }
 
 .tp-newsletter-margin {
