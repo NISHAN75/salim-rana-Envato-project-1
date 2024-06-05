@@ -55,6 +55,15 @@
 .tp-nblue-bg{
 	background-color: var(--tp-theme-nblue);
 }
+.tp-yellow-bg{
+	background-color: var(--tp-theme-color-2);
+}
+.tp-cream-bg{
+	background-color: var(--tp-cream);
+}
+.tp-theme-black-bg{
+	background-color: var(--tp-heading-color);
+}
 
 .bg-fix{
 	background-position: center;
@@ -70,4 +79,17 @@ img{
 }
 .br-24{
 	border-radius: 24px;
+}
+
+.tp-slide-transtion{
+	-webkit-transition-timing-function: linear;
+	transition-timing-function: linear;
+}
+
+.tp-brand-slide-element{
+	width: auto;
+	display: inline-block;
+}
+.fs-100{
+	font-size: 100px;
 }
