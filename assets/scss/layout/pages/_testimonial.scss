@@ -13,6 +13,10 @@
     }
     &-desc{
         font-size: 100px;
+        @media #{$xl}{
+            font-size: 75px;
+        }
+        
     }
     &-name{
         font-size: 30px;
@@ -37,23 +41,42 @@
     position: absolute;
     left: -100px;
     top: 34%;
+    font-size: 52px;
+    line-height: 1;
+    z-index: 9;
+    @media #{$xxlm , $xl}{
+        left: 0;
+        top: inherit;
+        bottom: 11px;
+    }
     &-next{
         left: auto;
         right: -100px;
+        @media #{$xxlm , $xl}{
+            bottom: 0;
+            right: inherit;
+            left: 70px;
+        }
+        
     }
 }
-
+.tp-ro-180{
+    transform: rotate(180deg);
+}
 .tp-testimonial-shape-thumb{
     &-1{
         top: 115px;
         left: 0; 
         max-width: 266px;
+        @media #{$xl}{
+            top: 50px;
+        }
     }
     &-2{
         right: 0;
         top: 34px;
         max-width: 266px;
     }
-}
 
+}
 

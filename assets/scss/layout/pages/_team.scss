@@ -7,6 +7,9 @@
         }
     }
     &__info{
+        @media #{$xxlm , $xl}{
+            margin-left: 0px;
+        }
         & span{
             color: #57595c;
             font-size: 17px;
@@ -30,17 +33,22 @@
     &__title{
         font-size: 30px;
         margin-bottom: 5px;
+        @media #{$xxlm , $xl}{
+            font-size: 25px;
+        }
     }
 }
 
 .tp-swiper-team-button{
-    display: inline-block;
+    display: inline-flex;
+    line-height: 1;
+    font-size: 52px;
 }
 .tp-team-nav{
     & span{
         height: 12px;
         width: 12px;
-        display: inline-block;
+        display: inline-flex;
         background: #DBDBDB;
         border-radius: 100%;
         margin: 0 10px;

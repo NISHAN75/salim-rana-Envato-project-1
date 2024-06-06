@@ -8,6 +8,9 @@
             & .tpaward{
                 padding-left: 55px;
                 border-left: 1px solid #57595c;
+                @media #{$xl}{
+                    padding-left: 10px;
+                }
             }
         }
         & .col-md-6:nth-child(1){

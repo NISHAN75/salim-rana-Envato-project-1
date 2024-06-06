@@ -1,6 +1,22 @@
 @use '../../utils' as *;
+.tp-about{
+    &-img{
+        @media #{$xl}{
+            margin-bottom: 50px;
+        }
+    }
+    &-box{
+        @media #{$xl}{
+            padding-left: 20px;
+            margin-bottom: 50px;
+        }
+    }
+}
 
 .tp-about-video{
+    @media #{$xl}{
+        padding-left: 20px;
+    }
     &-icon{
         & a{
             height: 80px;
@@ -22,14 +38,16 @@
 .tp-about-shape-1 {
     right: 0;
     top: 0;
-    z-index: 1;
+    z-index: -1;
 }
 .tp-about-shape-2 {
     left: 0;
     top: 35%;
+    z-index: -1;
 }
-.tp-about-shape-3P{
+.tp-about-shape-3{
     top: 40%;
     left: 35%;
+    z-index: -1;
 }
 
