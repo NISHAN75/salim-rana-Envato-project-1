@@ -5612,7 +5612,24 @@ img {
   }
 }
 
+.tpteam__thumb {
+  position: relative;
+  z-index: 1;
+}
 .tpteam__thumb img {
+  border-radius: 15px;
+}
+.tpteam__thumb-2 {
+  margin-left: 10px;
+}
+.tpteam__thumb-border {
+  position: absolute;
+  left: -10px;
+  top: -10px;
+  height: 100%;
+  width: 100%;
+  border: 1px solid #57595c;
+  z-index: -1;
   border-radius: 15px;
 }
 @media only screen and (min-width: 1400px) and (max-width: 1600px), only screen and (min-width: 1200px) and (max-width: 1399px), only screen and (min-width: 768px) and (max-width: 991px) {
@@ -5647,6 +5664,30 @@ img {
   font-size: 25px;
   margin-right: 15px;
 }
+.tpteam__social-2 {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 55%;
+  transform: translateY(-50%);
+  z-index: 2;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.3s linear;
+}
+.tpteam__social-2 a {
+  height: 50px;
+  width: 50px;
+  color: #0A0E1A;
+  background-color: #fff;
+  display: inline-block;
+  border-radius: 50%;
+  line-height: 60px;
+  margin: 0 2px;
+}
+.tpteam__social-2 a i {
+  font-size: 25px;
+}
 .tpteam__title {
   font-size: 30px;
   margin-bottom: 5px;
@@ -5656,10 +5697,19 @@ img {
     font-size: 25px;
   }
 }
+.tpteam__subtitle {
+  display: block;
+  margin-bottom: 7px;
+}
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
   .tpteam span {
     margin-left: 0px;
   }
+}
+.tpteam:hover .tpteam__social-2 {
+  opacity: 1;
+  visibility: visible;
+  top: 50%;
 }
 
 .tp-swiper-team-button {
