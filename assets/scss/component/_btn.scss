@@ -10,6 +10,30 @@
     line-height: 1.5;
     display: inline-block;
     color: var(--tp-white);
+    position: relative;
+    overflow: hidden;
+    & i{
+        height: 100%;
+        width: 22px;
+        position: absolute;
+        bottom: -2px;
+        right: -12px;
+        transform: rotate(13deg);
+        background-color: #71A2FF;
+        transition: all 0.2s linear;
+    }
+    &:hover{
+        & .tp-btn-y-1{
+            transform: translateY(-100%);
+        }
+        & .tp-btn-y-2{
+            transform: translateY(0%);
+        }
+        & i {
+            right: -100%;
+        }
+        color: #fff;
+    }
     &-sec{
         font-size:18px;
         font-family:var(--tp-font-heading);
@@ -18,8 +42,31 @@
         border-radius:5px;
         line-height: 1.5;
         display: inline-block;
+        position: relative;
+        overflow: hidden;
+        & i{
+            height: 100%;
+            width: 22px;
+            position: absolute;
+            bottom: -2px;
+            right: -12px;
+            transform: rotate(13deg);
+            background-color: #E5CF00;
+            transition: all 0.2s linear;
+        }
         &-lg{
             padding:21.5px 48px;
+        }
+        &:hover{
+            & .tp-btn-y-1{
+                transform: translateY(-100%);
+            }
+            & .tp-btn-y-2{
+                transform: translateY(0%);
+            }
+            & i {
+                right: -100%;
+            }
         }
 
     }
@@ -33,7 +80,34 @@
         display: inline-block;
         line-height: 1;
         border-radius: 100%;
+        transition: all 0.3s linear;
+        &:hover{
+            background-color: var(--tp-theme-color);
+            color: #fff;
+            opacity: 1;
+            border-color: var(--tp-theme-color);
+        }
     }
+    &-wrap{
+        position: relative;
+        overflow: hidden;
+        display: block;
+        & span{
+            transition: all 0.2s linear;
+            display: block;
+        }
+    }
+    &-y-1{
+        transform: translateY(0%);
+    }
+    &-y-2{
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        transform: translateY(100%);
+    }
+    
 }
 .tp-text-btn{
     font-size: 18px;

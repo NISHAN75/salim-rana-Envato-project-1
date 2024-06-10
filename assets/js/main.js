@@ -75,6 +75,46 @@
       nextEl: ".tp-swiper-team-button-next",
       prevEl: ".tp-swiper-team-button-prev",
     },
+     // Responsive breakpoints
+    breakpoints: {
+      // when window width is >= 640px
+      0: {
+        slidesPerView: 1,
+      },
+      768: {
+        slidesPerView: 2,
+      },
+      // when window width is >= 992px
+      992: {
+        slidesPerView: 3,
+      },
+      // when window width is >= 1200px
+      1200: {
+        slidesPerView: 4,
+      }
+    }
+  });
+
+  // magnific popup
+  $('.popup-img').magnificPopup({
+    type: 'image'
+    // other options
+  });
+  $('.popup-video').magnificPopup({
+    type: 'iframe',
+    iframe: {
+      markup: '<div class="mfp-iframe-scaler">' +
+        '<div class="mfp-close"></div>' +
+        '<iframe class="mfp-iframe" frameborder="0" allow="autoplay"></iframe>' +
+        '</div>',
+      patterns: {
+        youtube: {
+          index: 'youtube.com/',
+          id: 'v=',
+          src: 'https://www.youtube.com/embed/%id%?autoplay=1'
+        }
+      }
+    }
   });
 
 

@@ -1,8 +1,12 @@
 @use '../../utils' as *;
 .tp-about{
     &-img{
-        @media #{$xl}{
+        @media #{$xl , $lg}{
             margin-bottom: 50px;
+        }
+        @media #{$sm,$xs}{
+            margin-bottom: 30px;
+            padding-left: 0;
         }
     }
     &-box{
@@ -10,12 +14,21 @@
             padding-left: 20px;
             margin-bottom: 50px;
         }
+        @media #{$lg , $md , $sm , $xs}{
+            padding-left: 0px;
+            margin-bottom: 30px;
+        }
     }
 }
 
 .tp-about-video{
     @media #{$xl}{
         padding-left: 20px;
+
+    }
+    @media #{$lg , $md , $sm , $xs}{
+        padding-left: 0px;
+        margin-bottom: 0;
     }
     &-icon{
         & a{
@@ -49,5 +62,37 @@
     top: 40%;
     left: 35%;
     z-index: -1;
+}
+.tp-about-content{
+    & ul{
+
+        li{
+            list-style: none;
+            margin-bottom: 20px;
+            & i{
+                font-weight: 300;
+                font-size: 30px;
+                line-height: 1.33;
+                color: #000000;
+                margin-right: 10px;
+            }
+            & span{
+                font-size: 30px;
+                line-height: 1.33;
+                color: #0A0E1A;
+                font-family: var(--tp-fonts-heading);
+            }
+        }
+    }
+}
+.tp-about-circle-img {
+    position: absolute;
+    top: 0;
+    right: 185px;
+    z-index: 1;
+    & img{
+        max-width: 772px;
+    }
+    
 }
 

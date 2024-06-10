@@ -136,28 +136,28 @@
   transform: translateY(-5px);
 }
 
-.tp-header-shap-5 {
+.tp-hero-shap-5 {
   right: 300px;
   bottom: 131px;
   width: 170px;
   z-index: 1;
 }
 
-.tp-header-shap-4 {
+.tp-hero-shap-4 {
   top: 212px;
   right: 193px;
   width: 145px;
   z-index: 1;
 }
 
-.tp-header-shap-2 {
+.tp-hero-shap-2 {
   top: 295px;
   left: 386px;
   width: 512px;
   z-index: 1;
 }
 
-.tp-header-shap-1 {
+.tp-hero-shap-1 {
   top: 370px;
   left: 0;
   width: 255px;
@@ -165,7 +165,7 @@
   z-index: 1;
 }
 
-.tp-header-shap-3 {
+.tp-hero-shap-3 {
   left: 59%;
   top: 31%;
   width: 85px;

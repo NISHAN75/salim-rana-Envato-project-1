@@ -12,6 +12,16 @@
     @media #{$xl}{
         padding-left: 30px;
     }
+    @media #{$lg}{
+        padding-left: 40px;
+    }
+    @media #{$md}{
+        padding-left: 20px;
+    }
+    @media #{$xs}{
+        padding-left: 20px;
+    }
+    
 }
 
 .tp-main-menu {
@@ -131,9 +141,10 @@
             padding: 20px 25px; 
             display: flex;
             align-items: center;
-            @media #{$xl}{
+            @media #{$xl , $lg , $md}{
                 padding: 16px 25px; 
             }
+
         }
         & i {
             color: #fff;
@@ -141,15 +152,16 @@
             line-height: 0;
         }
     }
-
-    
     &-cta{
         display: flex;
         align-items: center;
         // gap: 15px;
         padding: 23px 40px;
-        @media #{$xl}{
+        @media #{$xl , $lg}{
             padding: 20px 25px;
+        }
+        @media #{$md}{
+            padding: 20px 15px;
         }
         border-left: 1px solid rgba(255,255,255,0.15);
         & i{
@@ -175,7 +187,12 @@
             margin-right: 15px;
         }
     }
+    &-btn {
+        display: flex;
+        align-items: center;
+    }
 }
+
 
 
 

@@ -14,18 +14,18 @@
 <body>
     <!-- header area section start -->
     <header>
-        <div class="tp-header-area tp-transparent-header pl-100 tp-header-border">
+        <div class="tp-header-area  tp-transparent-header pl-100 tp-header-border">
            <div class="container-fluid p-0">
             <div class="row gx-0 align-items-center">
-                <div class="col-xl-2 col-lg-5 col-5">
+                <div class="col-xl-2 col-lg-5 col-md-4 col-6">
                    <div class="tp-logo">
                     <a href="index.html">
                         <img src="assets/img/svg/Logo.svg" alt="logo-icon">
                     </a>
                    </div>
                 </div>
-                <div class="col-xl-10 col-lg-7 col-7">
-                    <div class="tp-header-box d-flex justify-content-between justify-content-lg-end">
+                <div class="col-xl-10 col-lg-7 col-md-8 col-6">
+                    <div class="tp-header-box d-flex justify-content-end justify-content-xl-between">
                         <div class="tp-main-menu pl-45 d-none d-xl-block">
                             <nav>
                                 <ul>
@@ -75,12 +75,12 @@
                             </nav>
                         </div>
                         <div class="tp-header-right d-flex align-items-center justify-content-end flex-wrap ">
-                            <div class="tp-header-search d-flex align-items-center">
+                            <div class="tp-header-search d-none d-md-flex align-items-center">
                                 <button>
                                     <i class="flaticon-search"></i>
                                 </button>
                             </div>
-                            <div class="tp-header-cta">
+                            <div class="tp-header-cta d-none d-xl-flex align-items-center">
                                 <div class="tp-header-cta-icon d-flex align-items-center">
                                     <i class="flaticon-phone-book"></i>
                                 </div>
@@ -107,13 +107,13 @@
     <main>
 
         <!-- tp-hero-area section start -->
-        <section class="tp-hero-area tp-black-bg pt-290 pb-170 p-relative bg-fix" data-background="assets/img/shape/hero-bg-1-shap.png">
-            <div class="tp-header-shape">
-                <img class="tp-header-shap-1 p-absolute" src="assets/img/shape/hero-1-right-cricle-shap.png" alt="big cricle">
-                <img class="tp-header-shap-2 p-absolute" src="assets/img/shape/hero-1-larger-shap.png" alt="big cricle">
-                <img class="tp-header-shap-3 p-absolute" src="assets/img/shape/hero-1-header-sm-cricle.png" alt="big cricle">
-                <img class="tp-header-shap-4 p-absolute" src="assets/img/shape/hero-1-green-cricle.png" alt="big cricle">
-                <img class="tp-header-shap-5 p-absolute" src="assets/img/shape/hero-1-yellow-ban.png" alt="big cricle">
+        <section class="tp-hero-area tp-hero-space tp-black-bg pt-265 pb-170 p-relative bg-fix" data-background="assets/img/shape/hero-bg-1-shap.png">
+            <div class="tp-hero-shape">
+                <img class="tp-hero-shap-1 p-absolute d-none d-md-block" src="assets/img/shape/hero-1-right-cricle-shap.png" alt="big cricle">
+                <img class="tp-hero-shap-2 d-none d-xl-block p-absolute" src="assets/img/shape/hero-1-larger-shap.png" alt="big cricle">
+                <img class="tp-hero-shap-3 p-absolute d-none d-md-block" src="assets/img/shape/hero-1-header-sm-cricle.png" alt="big cricle">
+                <img class="tp-hero-shap-4 p-absolute d-none d-md-block" src="assets/img/shape/hero-1-green-cricle.png" alt="big cricle">
+                <img class="tp-hero-shap-5 p-absolute d-none d-md-block" src="assets/img/shape/hero-1-yellow-ban.png" alt="big cricle">
             </div>
             <div class="hero-info d-none d-xxl-flex">
                 <div class="hero-social">
@@ -134,7 +134,13 @@
                         <h1 class="tp-hero-title"> <i>brilliant ideas <br>for your brand</i> from canada</h1>
                     </div>
                     <div class="tp-hero-btn">
-                        <a href="#" class="tp-btn-sec">Discover More</a>
+                        <a href="#" class="tp-btn-sec">
+                            <div class="tp-btn-wrap">
+                                <span class="tp-btn-y-1">Discover More</span>
+                                <span class="tp-btn-y-2">Discover More</span>
+                            </div>
+                             <i></i>
+                            </a>
                     </div>
                 </div>
             </div>
@@ -142,22 +148,22 @@
         <!-- tp-hero-area section end -->
 
         <!-- tp-about-area section start -->
-        <section class="tp-about-area pt-130 pb-135 p-relative z-1" style="background-image: url('assets/img/bg/about-section-bg.jpg');">
-            <div class="tp-header-shape">
-                <img class="tp-about-shape-1 p-absolute" src="assets/img/shape/about-start-1.svg" alt="big cricle">
-                <img class="tp-about-shape-2 p-absolute" src="assets/img/shape/about-start-2.svg" alt="big cricle">
-                <img class="tp-about-shape-3 p-absolute" src="assets/img/shape/about-start-3.svg" alt="big cricle">
+        <section class="tp-about-area pt-130 pb-135 p-relative z-1 overflow-hidden" style="background-image: url('assets/img/bg/about-section-bg.jpg');">
+            <div class="tp-hero-shape">
+                <img class="tp-about-shape-1 p-absolute d-none d-md-block" src="assets/img/shape/about-start-1.svg" alt="big cricle">
+                <img class="tp-about-shape-2 p-absolute d-none d-md-block" src="assets/img/shape/about-start-2.svg" alt="big cricle">
+                <img class="tp-about-shape-3 p-absolute d-none d-md-block" src="assets/img/shape/about-start-3.svg" alt="big cricle">
             </div>
             <div class="container">
-                <div class="row">
-                    <div class="col-lg-6">
-                        <div class="tp-about-img mb-100">
+                <div class="row flex-column-reverse flex-md-row">
+                    <div class="col-md-6">
+                        <div class="tp-about-img mb-100 br-20">
                             <img src="assets/img/about/about-h1-1.jpg" alt="">
                         </div>
                         <div class="tp-about-video pl-110 mb-100">
                             <div class="tp-about-video-info d-flex align-items-center mb-27">
                                 <div class="tp-about-video-icon mr-15">
-                                    <a href="#"><img src="assets/img/about/paly-icon.svg" alt=""></a>
+                                    <a href="https://www.youtube.com/watch?v=5wWx4Mk6IGE" class="popup-video"><img src="assets/img/about/paly-icon.svg" alt=""></a>
                                 </div>
                                 <h4 class="mb-0">Intro video</h4>
                             </div>
@@ -168,7 +174,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-6">
+                    <div class="col-md-6">
                         <div class="tp-about-box pl-42 mb-100">
                             <div class="tp-section-title-wrapper mb-33">
                                 <h2 class="tp-section-title mb-20">
@@ -176,11 +182,17 @@
                                 </h2>
                                 <p>Per ipsum ultrices sollicitudin iaculis platea facilisi Semper aliquam up taciti <b>senectus cursus</b> vivamus volutpat nibh. Penatibus fringilla porttitor do magna purus massa per <b>duis dapibus</b> scelerisque etiam</p>
                             </div>
-                            <div class="tp-about-btn">
-                                <a href="#" class="tp-btn">About More</a>
+                            <div class="tp-about-btn ">
+                                <a href="#" class="tp-btn">
+                                    <div class="tp-btn-wrap">
+                                        <span class="tp-btn-y-1">About More</span>
+                                        <span class="tp-btn-y-2">About More</span>
+                                    </div>
+                                     <i></i>
+                                </a>
                             </div>
                         </div>
-                        <div class="tp-about-img mb-100">
+                        <div class="tp-about-img mb-100 br-20 pl-42">
                             <img src="assets/img/about/about-h1-2.jpg" alt="">
                         </div>
                     </div>
@@ -202,13 +214,19 @@
                         </div>
                         <div class="col-xl-8">
                             <div class="tp-newsletter-box p-relative">
-                                <h2 class="tp-newsletter-back">Newsletter</h2>
+                                <h2 class="tp-newsletter-back d-none d-md-block">Newsletter</h2>
                                 <form action="#">
                                     <div class="tp-newsletter-input p-relative">
                                         <input type="email" placeholder="Email Here">
                                         <img src="assets/img/icon/plane-arrow.svg" alt="....">
                                     </div>
-                                    <button class="tp-btn-sec tp-btn-sec-lg">Subscribe Now</button>
+                                    <button class="tp-btn-sec tp-btn-sec-lg">
+                                        <span class="tp-btn-wrap">
+                                            <span class="tp-btn-y-1">Subscribe Now</span>
+                                            <span class="tp-btn-y-2">Subscribe Now</span>
+                                        </span>
+                                         <i></i>
+                                    </button>
                                 </form>
                             </div>
                         </div>
@@ -230,7 +248,7 @@
                     </p>
                 </div>
                 <div class="row justify-content-center gx-0">
-                    <div class="col-lg-3">
+                    <div class="col-xl-3 col-lg-6 col-md-6">
                         <div class="tpservices br-24 mb-30">
                             <div class="tpservices__icon mb-25">
                                <span>
@@ -256,7 +274,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-3">
+                    <div class="col-xl-3 col-lg-6 col-md-6">
                         <div class="tpservices br-24 mb-30">
                             <div class="tpservices__icon mb-25">
                                 <span>
@@ -282,7 +300,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-3">
+                    <div class="col-xl-3 col-lg-6 col-md-6">
                         <div class="tpservices br-24 mb-30">
                             <div class="tpservices__icon mb-25">
                                <span>
@@ -309,7 +327,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-3">
+                    <div class="col-xl-3 col-lg-6 col-md-6">
                         <div class="tpservices br-24 mb-30">
                             <div class="tpservices__icon mb-25">
                                 <span>
@@ -422,10 +440,10 @@
                     <div class="tp-testimonial-shape">
                         <img src="assets/img/testimonial/quote-icon.png" alt="....">
                     </div>
-                    <div class="tp-testimonial-shape-thumb-1 p-absolute">
+                    <div class="tp-testimonial-shape-thumb-1 p-absolute d-none d-xl-block">
                         <img src="assets/img/testimonial/thumb-1.jpg" alt="....">
                     </div>
-                    <div class="tp-testimonial-shape-thumb-2 p-absolute">
+                    <div class="tp-testimonial-shape-thumb-2 p-absolute d-none d-xl-block">
                         <img src="assets/img/testimonial/thumb-2.jpg" alt="....">
                     </div>
                     <div class="swiper tp-testimonial-active">
@@ -472,10 +490,11 @@
                         </div>
                     </div>
                     <div class="tp-test-slider-arrow">
-                        <div class="tp-swiper-test-button-next tp-swiper-test-button ">
-                            <i class="flaticon-right-arrow"></i>
+                        <div class="tp-swiper-test-button-next  tp-swiper-test-button ">
+                            <i class="flaticon-right-arrow"></i>  
                         </div>
-                        <div class="tp-swiper-test-button-prev tp-swiper-test-button tp-ro-180">
+                        <div class="tp-swiper-test-button-prev tp-ro-180 tp-swiper-test-button ">
+                            
                             <i class="flaticon-right-arrow"></i>
                         </div>
                     </div>
@@ -486,7 +505,7 @@
         <!-- tp testimonial section end -->
 
         <!-- tp brand section start -->
-        <section class="tp-brand-area tp-yellow-bg pt-40 pb-40">
+        <section class="tp-brand-area tp-yellow-bg pt-40 pb-40 mb-20">
             <div class="tp-brand-wrapper">
                 <div class="swiper tp-brand-top-active">
                     <div class="swiper-wrapper tp-slide-transtion">
@@ -638,7 +657,7 @@
         <div class="tp-team-area pt-130 pb-130 pl-100 pr-100">
             <div class="container-fluid">
                 <div class="row align-items-center">
-                    <div class="col-lg-8">
+                    <div class="col-md-8">
                         <div class="tp-section-title-wrapper mb-50">
                             <h2 class="tp-section-title mb-20">
                                 Dedicated team member<br>
@@ -646,8 +665,8 @@
                             </h2>
                         </div>
                     </div>
-                    <div class="col-lg-4">
-                        <div class="tp-team-nav text-end d-flex justify-content-end align-items-center">
+                    <div class="col-md-4">
+                        <div class="tp-team-nav text-end d-flex justify-content-start justify-content-md-end align-items-center">
                             <div class="tp-swiper-team-button-next tp-swiper-team-button tp-ro-180">
                                 <i class="flaticon-right-arrow  mt-10"></i>
                             </div>
@@ -800,7 +819,7 @@
         <!-- tp team area section end -->
 
         <!-- tp award area section start -->
-        <div class="award-area tp-cream-bg pt-130 pb-130">
+        <div class="award-area tp-cream-bg pt-130 pb-90">
             <div class="container">
                 <div class="row ">
                     <div class="col-lg-6">
@@ -811,7 +830,7 @@
                                 inspired our member
                             </h2>
                         </div>
-                        <div class="shape-arrow">
+                        <div class="shape-arrow d-none d-lg-block">
                             <img src="assets/img/award/big-arrow.svg" alt="...">
                         </div>
                     </div>
@@ -863,11 +882,11 @@
         <!-- tp award area section end -->
 
         <!-- tp fun fat section start -->
-        <div class="tp-fact-area tp-nblue-bg pt-130 pb-100 bg-fix" data-background="assets/img/fat-icon/fun-fat-bg.png">
+        <div class="tp-fact-area tp-nblue-bg pt-130 pb-90 bg-fix" data-background="assets/img/fat-icon/fun-fat-bg.png">
             <div class="container">
                 <div class="custom-row">
                     <div class="cols">
-                        <div class="tpfact mb-30">
+                        <div class="tpfact text-center text-lg-start mb-40">
                             <div class="tpfact__icon">
                                 <span>
                                     <i class="flaticon-merging"></i>
@@ -880,7 +899,7 @@
                         </div>
                     </div>
                     <div class="cols">
-                        <div class="tpfact mb-30">
+                        <div class="tpfact text-center text-lg-start mb-40">
                             <div class="tpfact__icon">
                                 <span>
                                     <i class="flaticon-merging"></i>
@@ -893,7 +912,7 @@
                         </div>
                     </div>
                     <div class="cols">
-                        <div class="tpfact mb-30">
+                        <div class="tpfact text-center text-lg-start mb-40">
                             <div class="tpfact__icon">
                                 <span>
                                     <i class="flaticon-merging"></i>
@@ -906,7 +925,7 @@
                         </div>
                     </div>
                     <div class="cols">
-                        <div class="tpfact mb-30">
+                        <div class="tpfact text-center text-lg-start mb-40">
                             <div class="tpfact__icon">
                                 <span>
                                     <i class="flaticon-merging"></i>
@@ -924,7 +943,7 @@
         <!-- tp fun fat section end -->
 
         <!-- tp blog area section start -->
-        <div class="tp-blog-post-area pt-130 pb-130">
+        <div class="tp-blog-post-area pt-130 pb-90">
             <div class="container">
                 <div class="row">
                     <div class="col-lg-12">
@@ -940,7 +959,7 @@
                 </div>
                 <div class="row">
                     <div class="col-lg-4">
-                        <div class="tpblog mb-30">
+                        <div class="tpblog mb-40">
                             <div class="tpblog__thumb mb-35">
                                 <a href="#">
                                     <img src="assets/img/blog/blog-1.jpg" alt="">
@@ -967,7 +986,7 @@
                         </div>
                     </div>
                     <div class="col-lg-4">
-                        <div class="tpblog mb-30">
+                        <div class="tpblog mb-40">
                             <div class="tpblog__thumb mb-35">
                                 <a href="#">
                                     <img src="assets/img/blog/blog-2.jpg" alt="">
@@ -994,7 +1013,7 @@
                         </div>
                     </div>
                     <div class="col-lg-4">
-                        <div class="tpblog mb-30">
+                        <div class="tpblog mb-40">
                             <div class="tpblog__thumb mb-35">
                                 <a href="#">
                                     <img src="assets/img/blog/blog-3.jpg" alt="">
@@ -1029,14 +1048,14 @@
         <div class="tp-contact-form-area tp-cream-bg pt-130 pb-130">
             <div class="container">
                 <div class="row">
-                    <div class="col-lg-5">
+                    <div class="col-xl-5">
                         <div class="tp-section-title-wrapper mb-50">
                             <h2 class="tp-section-title mb-20 fs-100">
                                 Contact Us
                             </h2>
                         </div> 
                     </div>
-                    <div class="col-lg-7">
+                    <div class="col-xl-7">
                         <div class="contact-form-wrapper">
                             <h3 class="tpform-title mb-25">
                                 Get in touch
@@ -1055,7 +1074,13 @@
                                     <textarea name="" id="" cols="30" rows="10" placeholder="write note*"></textarea>
                                 </div>
                                 <div class="col-lg-12">
-                                    <button type="submit" class="tp-btn">Send Message</button>
+                                    <button type="submit" class="tp-btn">
+                                        <span class="tp-btn-wrap">
+                                            <span class="tp-btn-y-1">Send Message</span>
+                                            <span class="tp-btn-y-2">Send Message</span>
+                                        </span>
+                                         <i></i>
+                                    </button>
                                 </div>
                             </div>
                         </div>
@@ -1089,18 +1114,18 @@
         <div class="container">
             <div class="tp-footer-logo-area pt-130">
                 <div class="row align-items-center">
-                    <div class="col-lg-3">
-                        <div class="footer-logo">
+                    <div class="col-md-3">
+                        <div class="footer-logo mb-30">
                             <a href="index.html">
                                 <img src="assets/img/footer/footer-logo.svg" alt="...">
                             </a>
                         </div>
                     </div>
-                    <div class="col-lg-6">
-                        <div class="footer-sep"></div>
+                    <div class="col-md-6 d-none d-md-block">
+                        <div class="footer-sep mb-30"></div>
                     </div>
-                    <div class="col-lg-3">
-                        <div class="tpfooter-social pl-35">
+                    <div class="col-md-3">
+                        <div class="tpfooter-social mb-30 pl-35">
                             <a href="#">
                                 <i class="fab fa-facebook-f"></i>
                             </a>
@@ -1116,8 +1141,8 @@
             </div>
             <div class="tp-footer-widget-area pt-70 pb-40">
                 <div class="row">
-                    <div class="col-lg-3"></div>
-                    <div class="col-lg-3">
+                    <div class="col-xl-3"></div>
+                    <div class="col-xl-3 col-lg-4 col-md-4">
                         <div class="tp-footer-widget tp-footer-col-1 mb-50">
                             <h3 class="tp-footer-widget-title mb-">California</h3>
                             <div class="footer-content">
@@ -1141,7 +1166,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-3">
+                    <div class="col-xl-3 col-lg-4 col-md-4">
                         <div class="tp-footer-widget tp-footer-col-3 mb-50">
                             <h3 class="tp-footer-widget-title mb-20">California</h3>
                             <ul>
@@ -1166,7 +1191,7 @@
                             </ul>
                         </div>
                     </div>
-                    <div class="col-lg-3">
+                    <div class="col-xl-3 col-lg-4 col-md-4">
                         <div class="tp-footer-widget tp-footer-col-4 mb-50">
                             <h3 class="tp-footer-widget-title mb-20">California</h3>
                             <div class="tp-footer-contact">
@@ -1186,14 +1211,14 @@
             </div>
             <div class="tp-footer-copyright-area pt-40 pb-10">
                 <div class="row align-items-center">
-                    <div class="col-lg-3">
-                        <div class="tp-footer-copyright mb-30">
+                    <div class="col-xl-3 col-lg-4">
+                        <div class="tp-footer-copyright mb-30 text-center text-lg-start">
                             <p>&copy; Copyright 2023 | Alright reserved<br>
                                 exdos by <a href="#">Hr Design</a></p>
                         </div>
                     </div>
-                    <div class="col-lg-9">
-                        <div class="tp-footer-menu text-end mb-30">
+                    <div class="col-xl-9 col-lg-8">
+                        <div class="tp-footer-menu text-center text-lg-end mb-30">
                             <ul>
                                 <li><a href="#">Career</a></li>
                                 <li><a href="#">our FAq</a></li>

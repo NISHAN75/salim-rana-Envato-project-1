@@ -1,9 +1,46 @@
 @use '../utils' as *;
 
-.tp-section-title{
-    font-size: 60px;
-    line-height: 1.16;
-    &-white{
-        color: #fff;
+.tp-section{
+    &-subtitle{
+        font-weight: 500;
+        font-size: 15px;
+        display: inline-block;
+        text-transform: uppercase;
+        color: #57595c;
+        & i{
+            height: 10px;
+            width: 10px;
+            border-radius: 30px;
+            background-color: var(--tp-theme-color);
+            display: inline-block;
+            margin-right: 5px;
+        }
+    }
+    &-title{
+        font-size: 60px;
+        line-height: 1.16;
+        @media #{$lg}{
+            font-size: 50px;
+         }
+        @media #{$md , $sm , $xs}{
+            font-size: 35px;
+         }
+        &-white{
+            color: #fff;
+        }
+        & br{
+            @media #{$xs}{
+                display: none;
+            }
+        }
+        &-wrapper{
+            & p {
+                & br{
+                    @media #{$xs}{
+                        display: none;
+                    }
+                }
+            }
+        }
     }
 }

@@ -81,6 +81,18 @@ img{
 .br-5{
 	border-radius: 5px;
 }
+.br{
+	&-15{
+		& img{
+			border-radius: 15px;
+		}
+	}
+	&-20{
+		& img{
+			border-radius: 20px;
+		}
+	}
+}
 .br-24{
 	border-radius: 24px;
 }
@@ -99,4 +111,23 @@ img{
 	@media #{$xl}{
         font-size: 80px;
     }
+	@media #{$xs}{
+        font-size: 60px;
+    }
+}
+
+.pl-240{
+	padding-left: 240px;
+}
+.pt-290{
+	padding-top: 290px;
+}
+.pt-265{
+	padding-top: 265px;
+}
+.pt-170{
+	padding-top: 170px;
+}
+.text-upper{
+	text-transform: uppercase;
 }

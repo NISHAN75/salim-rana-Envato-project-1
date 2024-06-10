@@ -8,11 +8,19 @@
 
     }
     &__content{
-
+        @media #{$lg , $md}{
+            padding-left: 0;
+        }
+        @media #{$xs}{
+            padding-left: 0;
+        }
     }
     &__title{
         font-size: 30px;
         line-height: 1.25;
+        @media #{$lg}{
+            font-size: 25px;
+        }
     }
     &__meta{
         display: flex;

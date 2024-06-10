@@ -2,7 +2,16 @@
 
 
 .tp-project {
+
    &-tab{
+    &-btn{
+        @media #{$xs}{
+            padding-top: 30px;
+        }
+    }
+    @media #{$md , $xs}{
+        text-align: center;
+    }
     & button{
         color: #fff;
         font-size: 100px;
@@ -18,9 +27,35 @@
             font-size: 70px;
             padding: 13px 30px;
         }
+        @media #{$lg}{
+            font-size: 55px;
+            padding: 13px 30px;
+            width: 100%;
+            text-align: left;
+        }
+        @media #{$md , $xs}{
+            font-size: 20px;
+            padding: 10px 5px;
+        }
         &.active{
             border-color: var(--tp-theme-color-2);
             color: var(--tp-theme-color-2);
+        }
+    }
+    &-area{
+        @media #{$lg}{
+            padding-right: 50px;
+        }
+        @media #{$md , $xs}{
+            padding: 50px 10px;
+        }
+    }
+    &-content{
+        @media #{$lg , $md}{
+            margin-top: 30px;
+        }
+        @media #{$md , $xs}{
+            padding-left: 0;
         }
     }
     &-thumb{
@@ -30,7 +65,42 @@
         }
        }
    }
-
-
     
+}
+
+.tpportfolio{
+    position: relative;
+    &__title{
+        font-size: 30px;
+        background-color: #fff;
+        margin: 0;
+        padding: 12px 20px 12px 20px;
+        margin-top: 5px;
+        
+    }
+    &__thumb{}
+    &__text{
+        position: absolute;
+        bottom: 70px;
+        left: 80px;
+        opacity: 0;
+        visibility: hidden;
+        transition: all 0.3s linear;
+        & span{
+            background-color: #fff;
+            padding: 7px 20px 5px 20px;
+            font-size: 15px;
+            font-weight: 500;
+            text-transform: uppercase;;
+            display: inline-block;
+        }
+
+    }
+    &:hover{
+        & .tpportfolio__text{
+            visibility: visible;
+            opacity: 1;
+            bottom: 80px;
+        }
+    }
 }
