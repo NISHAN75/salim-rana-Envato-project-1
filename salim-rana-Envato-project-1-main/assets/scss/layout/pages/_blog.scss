@@ -1,0 +1,129 @@
+@use '../../utils' as *;
+
+.tpblog{
+    &__thumb{
+        & img{
+            border-radius: 15px;
+        }
+    }
+    &__content{
+        @media #{$lg , $md}{
+            padding-left: 0;
+        }
+        @media#{$xs} {
+            padding-left: 0;
+        }
+        &-meta {
+            background: #FFE4FB;
+            width: 55px;
+            height: 170px;
+            padding: 8px 0;
+            @include flexbox();
+            align-items: end;
+            justify-content: center;
+            position: relative;
+            border-radius: 10px;
+            text-align: center;
+            flex: 0 0 auto;
+            & i {
+                height: 45px;
+                width: 45px;
+                background-color: #fff;
+                text-align: center;
+                line-height: 45px;
+                border-radius: 5px;
+                border: 1px solid #57595C;
+                margin: auto;
+            }
+            & span {
+                @include flexbox();
+                flex-direction: column-reverse;
+                & cite{
+                    position: absolute;
+                    width: 130px;
+                    @include transform(rotate(-90deg));
+                    left: -37px;
+                    bottom: 97px;
+                    font-style: normal;
+                    font-weight: 500;
+                    font-size: 15px;
+                    text-transform: uppercase;
+                }
+            }
+        }
+        
+    }
+    &__title{
+        font-size: 30px;
+        line-height: 1.25;
+        @media #{$lg , $md ,$xs}{
+            font-size: 25px;
+        }
+    }
+    &__meta{
+        @include flexbox();
+        align-items: center;
+        flex-wrap: wrap;
+        & span{
+            font-size: 17px;
+            color: #57595c;
+            & i{
+                margin-right: 10px;
+            }
+        }
+        & cite{
+            width: 2px;
+            height: 16px;
+            background: #57595c;
+            display: inline-block;
+            margin: 0 14px;
+        }
+    }
+    &-2{
+        border: 1px solid #000;
+        border-radius: 15px;
+        @media #{$xs}{
+            padding: 10px;
+        }
+        .tpblog__thumb{
+            width: 200px;
+            flex: 0 0 auto;
+            margin-left: -3px;
+            height: calc(100% + 24px);
+            position: absolute;
+            left: 0;
+            top: 0px;
+            @include transform(translateY(-12px));
+            & img{
+                height: 100%;
+                object-fit: cover;
+                width: 100%;
+            }
+            @media #{$xs}{
+                position: static;
+                width: 100%;
+                margin: auto;
+                height: auto;
+                @include transform(translateY(0));
+            }
+        }
+        .tpblog__title {
+            font-weight: 400;
+        }
+        .tp-text-btn{
+            color: #57595C;
+            &:hover{
+                color: var(--tp-theme-2);
+            }
+        }
+        .tpblog__content{
+            padding-left: 228px;
+            padding-top: 23px;
+            padding-bottom: 23px;
+            padding-right: 10px;
+            @media #{$xs}{
+                padding: 25px 25px;
+            }
+        }
+    }
+}

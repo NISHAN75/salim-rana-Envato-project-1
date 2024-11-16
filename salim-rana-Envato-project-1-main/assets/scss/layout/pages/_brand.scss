@@ -1,0 +1,58 @@
+@use '../../utils' as *;
+
+.tp-brand-title{
+    & h3{
+        font-size: 100px;
+        color: var(--tp-white);
+        text-transform: uppercase;
+        margin-bottom: 0;
+        @media #{$md,$xs}{
+            font-size: 75px;
+        }
+    }
+}
+.brand-gradient-bg {
+    background: rgb(0,88,255);
+    background: radial-gradient(circle, rgba(0,88,255,1) 0%, rgba(255,76,0,1) 96%);
+}
+
+.tp-brand-item-border {
+    border: 1px solid #57595C;
+    min-height: 125px;
+    @include flexbox();
+    align-items: center;
+    justify-content: center;
+    margin-right: -1px;
+    margin-bottom: -1px;
+    border-radius: 10px;
+}
+.brand-section-title{
+    border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+    & h2{
+        color: #fff;
+        font-size: 30px;
+        margin-bottom: 0;
+        background-color: #1A1A1A;
+        display: inline-block;
+        @include transform(translateY(19px));
+        padding: 0 30px;
+        @media #{$xs}{
+            font-size: 20px;
+            padding: 0 15px;
+            transform: translateY(13px);
+    
+        }
+    }
+}
+.tp-brand-normal-wrapper{
+    border: 1px solid #57595C;
+    padding: 80px;
+    @media #{$xs}{
+        padding: 50px;
+    }
+}
+.tp-brand-logo-wrapper{
+    @media #{$lg , $md , $xs}{
+        padding-left: 0;
+    }
+}

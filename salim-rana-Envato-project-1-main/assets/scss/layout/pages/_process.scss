@@ -1,0 +1,140 @@
+@use '../../utils' as *;
+
+.tpprocess{
+    @media #{$xs}{
+        margin-bottom: 60px;
+    } 
+    &-2{
+        margin-left: -6px;
+        margin-top: -33px;
+        @media #{$xs}{
+            margin-left:0px;
+            margin-top: 0px;
+        }
+    }
+    &-3{
+        margin-left: -5px;
+        margin-top: -6px;
+        @media #{$xs}{
+            margin-left: 0px;
+            margin-top: 0px;
+        }
+    }
+    &-4{
+
+        @media #{$xs}{
+            margin-left: 0px;
+            margin-top: 0px;
+        }
+    }
+    &-border{
+        border: 1px solid #57595C;
+        border-radius: 215px;
+    }
+    &__step{
+        & span{
+            padding: 4px 24px;
+            background-color: var(--tp-theme-orange);
+            color: var(--tp-white);
+            border-radius: 20px;
+            @include transition(0.3s);
+        }
+    }
+    &__title{
+        font-size: 30px;
+    }
+    &:hover{
+        & .tpprocess__step{
+           & span{
+             background-color: var(--tp-theme-color);
+           } 
+        }
+    }
+    &__count{
+        background: #FF3838;
+        height: 77px;
+        width: 77px;
+        border-radius: 100%;
+        color: #fff;
+        text-align: center;
+        line-height: 58px;
+        font-size: 30px;
+        font-family: var(--tp-fonts-heading);
+        position: absolute;
+        bottom: -20px;
+        left: 0;
+        right: 0;
+        margin: auto;
+        border: 8px solid #fff;
+        @media #{$xs}{
+            bottom: auto;
+            top: -40px;
+        }
+    }
+    &__shape{
+        bottom: -44px;
+        left: 0;
+        &-2{
+            bottom: -40px;
+            left: -2px;
+            
+        }
+        &-3{
+            bottom: inherit;
+            top: -34px;
+        }
+        &-4{
+            bottom: -38px;
+        }
+    }
+    &__icon{
+        & span{
+            font-size: 85px;
+            background-color: #FFE9C9;
+            width: 150px;
+            height: 150px;
+            display: inline-block;
+            text-align: center;
+            line-height: 175px;
+            border-radius: 100%;
+            color: #000;
+        }
+        &-2{
+            & span{
+                height: 259px;
+                width: 259px;
+                font-size: 143px;
+                line-height: 253px;
+                margin: auto;
+            }
+            &-pos{
+                & span{
+                    line-height: 350px;
+                }
+                & .tpprocess__count{
+                    bottom: auto;
+                    top: -20px;
+                    @media #{$xs}{
+                        bottom: auto;
+                        top: -40px;
+                    }
+                }
+            }
+            @media #{$xs}{
+                margin-bottom: 30px;
+            } 
+        }
+    }
+    &__angle{
+        @media #{$xs}{
+            margin-bottom: 30px;
+        } 
+    }
+    &__content{
+        @media #{$xs}{
+           text-align: center;
+        }  
+    }
+}
+
+

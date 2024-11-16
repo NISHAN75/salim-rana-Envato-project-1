@@ -1,0 +1,68 @@
+@use '../../utils' as *;
+
+.tp-contact-img{
+    @media #{$lg , $md , $xs}{
+        text-align: center;
+        margin-bottom: 20px;
+    }
+    & img{
+        max-width: 644px;
+        margin-left: -40px;
+        @media #{$xl , $lg , $md , $xs}{
+            max-width: 100%;
+            margin-left: 0;
+        }
+
+    }
+}
+.tp-contact-form-box{
+    & input , & textarea{
+        border: 1px solid #57595C;
+        height: 60px;
+        padding: 17px 25px;
+    }
+    & textarea{
+        height: 160px;
+    }
+    & .p-relative{
+        & i{
+            position: absolute;
+            right: 25px;
+            top: 22px;
+            color: #57595C;
+        }
+    }
+}
+
+.tp-contact-info{
+    border: 1px solid #57595C;
+    padding: 50px 40px;
+    border-radius: 15px;
+    &-icon{
+        & i{
+            font-size: 85px;
+            color: #0A0E1A;
+            display: inline-block;
+            height: 85px;
+        }
+    }
+    &-text{
+        & span{
+            font-size: 15px;
+            font-weight: 500;
+            text-transform: uppercase;
+        }
+        & p{
+            font-size: 30px;
+            color: #0A0E1A;
+            line-height: 1.2;
+            font-family: var(--tp-fonts-heading);
+            margin-bottom: 0;
+        }
+    }
+}
+
+.map-area iframe{
+    height: 700px;
+    width: 100%;
+}

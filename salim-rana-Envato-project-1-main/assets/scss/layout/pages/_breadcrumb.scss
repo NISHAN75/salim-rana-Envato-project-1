@@ -1,0 +1,60 @@
+@use '../../utils' as *;
+
+.tp-breadcrumb{
+    &-title{
+        font-size: 70px;
+    }
+    &-space {
+        padding-top: 235px;
+        padding-bottom: 140px;
+    }
+    &-list{
+        & span{
+            display: inline-block;
+            margin: 0 2px;
+            color: #B1B4BA;
+            &.active{
+                & a{
+                    color: var(--tp-theme-color-2);
+                }
+            }
+            & a{
+                font-size: 20px;
+                color: #B1B4BA;
+                font-weight: 500;
+                line-height: 1.4;
+                @include transition(0.3s);
+                &:hover{
+                    color: var(--tp-theme-color-2);
+                }
+            }
+            &.dvir{
+                margin: 0 2px;
+                font-size: 20px;
+                font-weight: 500;
+                line-height: 1.4;
+            }
+        }
+    }
+    &-shape{
+        &-1{
+            left: 10%;
+            top: 43%;
+            z-index: 1;
+            max-width: 144px;
+        }
+        &-2{
+            right: 5%;
+            top: 50%;
+            z-index: 1;
+            max-width: 144px;
+        }
+        &-3{
+            right: 34%;
+            top: 35%;
+            z-index: 1;
+            max-width: 85px;
+        }
+    }
+}
+

@@ -1,0 +1,172 @@
+@use '../../utils' as *;
+
+.tp-footer-widget-title-black{
+    color: var(--tp-heading-color);
+}
+.tp-footer-newsletter{
+    position: relative;
+    z-index: 1;
+    & input{
+        margin-bottom: 10px;
+    }
+    & button{
+        position: absolute;
+        right: 0;
+        bottom: 28px;
+        color: #57595C;
+    }
+    .form-check{
+        margin-bottom: 0;
+        &-label {
+            color: #57595C;
+            font-size: 15px;
+            line-height: 1;
+            cursor: pointer;
+        }
+    }
+    .form-check .form-check-input{
+        border-color: #57595C;
+        &:focus{
+            border-color: var(--tp-theme-orange);
+            outline: 0;
+            box-shadow: none;
+        }
+        &:checked{
+            background-color: var(--tp-theme-orange);
+            border-color: var(--tp-theme-orange);
+        }
+    }
+    &-2{
+        & .form-check-label {
+            color: #B1B4BA;  
+        }
+        & .form-check  input{
+            border: 1px solid rgba(255, 255, 255, 0.15) !important;
+            --bs-form-check-bg:none;
+        }
+        & button{
+            & i{
+                color: #FF5B15;
+            }
+        }
+        & input{
+            color: #fff;
+            @include tp-placeholder(){
+                color: #B1B4BA;
+            }
+            &[type=email]{
+                padding-right: 17px;
+            }
+            &[type=email]:focus{
+                border-color: rgba(255, 255, 255, 0.15) !important;
+            }
+        }
+    }
+}
+.tp-footer-social{
+    & a{
+        font-size: 20px;
+        margin-right: 10px;
+        color: #57595C;
+        @include transition(0.2s);
+        &:hover{
+            color: var(--tp-theme-orange);
+        }
+    }
+    &-2{
+        & a{
+            margin-right: 15px;
+            color: #B1B4BA;
+        }
+    }
+}
+.tp-footer-widget-2{
+    & ul {
+        & li{
+            & a{
+                color: #57595C;
+                line-height: 1.5;
+                @include transition(0.2s);
+                &:hover{
+                    color: var(--tp-theme-orange);
+                }
+            }
+        }
+    }
+    & .tp-footer-contact-item {
+        & span {
+            color: #57595C;
+        }
+        & h4{
+            color: var(--tp-heading-color);
+        }
+    }
+    & .footer-content{
+        & a{
+            color: #57595C;
+            @include transition(0.2s);
+            &:hover{
+                color: var(--tp-theme-orange);
+            }
+        }
+    }
+}
+.tp-footer-2-col-2{
+    padding-left: 100px;
+    @media #{$lg , $md , $xs}{
+        padding-left: 0px;
+    }
+}
+.tp-footer-4-col{
+    &-2{
+        padding-left: 50px;
+        @media #{$lg , $md , $xs}{
+            padding-left: 0px;
+        }
+    }
+    &-3{
+        padding-left: 50px;
+        @media #{$lg , $md , $xs}{
+            padding-left: 0px;
+        }
+    }
+}
+.tp-footer-copyright-area-2 {
+    .tp-footer-copyright p {
+        color: #57595C;
+        margin-bottom: 0;
+        & a{
+            font-weight: 500;
+            color: var(--tp-theme-orange);
+            @include transition(0.2s);
+            &:hover {
+                color: var(--tp-heading-color);
+            }
+        }
+    }
+    .tp-footer-menu{
+        & ul{
+            & li{
+                & a{
+                    color: #57595C;
+                    @include transition(0.2s);
+                    &:hover{
+                        color: var(--tp-theme-orange);
+                    }
+                }
+            }
+        }
+    }
+}
+.tp-footer-copyright-area-3{
+    .tp-footer-copyright p {
+        & a{
+            &:hover {
+                color: var(--tp-theme-orange);
+            }
+        }
+    }
+}
+.tp-footer-widget-area-border{
+    border-bottom: 1px solid #57595C;
+}

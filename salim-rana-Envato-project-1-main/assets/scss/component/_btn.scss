@@ -1,0 +1,259 @@
+@use '../utils' as *;
+
+.tp-btn {
+    font-size: 18px;
+    font-family: var(--tp-fonts-heading);
+    background: var(--tp-theme-color);
+    padding: 16.5px 48px;
+    border-radius: 5px;
+    line-height: 1.5;
+    display: inline-block;
+    color: var(--tp-white);
+    position: relative;
+    overflow: hidden;
+    @include transition(0.2s);
+
+
+    & i {
+        height: 100%;
+        width: 22px;
+        position: absolute;
+        bottom: -2px;
+        right: -12px;
+        background-color: #71A2FF;
+        @include transform(rotate(13deg));
+        @include transition(0.2s);
+    }
+
+    &:hover {
+        color: #fff;
+
+        & .tp-btn-y-1 {
+            @include transform(translateY(-100%));
+        }
+
+        & .tp-btn-y-2 {
+            @include transform(translateY(0%));
+        }
+
+        & i {
+            right: -100%;
+        }
+        & .tp-btn-wrap span i{
+            right: 0;
+        }
+    }
+    &-orange{
+        font-size: 18px;
+        font-family: var(--tp-fonts-heading);
+        background: var(--tp-theme-orange);
+        padding: 16.5px 48px;
+        border-radius: 5px;
+        line-height: 1.5;
+        display: inline-block;
+        color: var(--tp-white);
+        position: relative;
+        overflow: hidden;
+        @include transition(0.2s);
+        & i {
+            height: 100%;
+            width: 22px;
+            position: absolute;
+            bottom: -2px;
+            right: -12px;
+            @include transform(rotate(13deg));
+            background-color: #FFAD8A;
+            @include transition(0.2s);
+        }
+    
+        &:hover {
+            color: #fff;
+    
+            & .tp-btn-y-1 {
+                @include transform(translateY(-100%));
+            }
+            & .tp-btn-y-2 {
+                @include transform(translateY(0%));
+            }
+            & i {
+                right: -100%;
+            }
+        }
+    }
+    &-red-orange{
+        background-color: rgba(255, 56, 56, 1);
+    }
+    &-sec {
+        background: var(--tp-theme-color-2);
+        color: var(--tp-black-common-color);
+        text-transform: capitalize;
+        @include transition(0.2s);
+
+        & i {
+            background-color: #E5CF00;
+            @include transition(0.2s);
+        }
+
+        &:hover {
+            color: var(--tp-black-common-color);
+            & .tp-btn-y-1 {
+                @include transform(translateY(-100%));
+            }
+
+            & .tp-btn-y-2 {
+                @include transform(translateY(0%));
+            }
+
+            & i {
+                right: -100%;
+            }
+        }
+
+        &-lg {
+            padding: 21.5px 48px;
+        }
+    }
+    &-circle {
+        font-size: 60px;
+        color: #fff;
+        opacity: 0.3;
+        border: 2px solid rgba(255, 255, 255, 0.2);
+        padding: 48px 75px;
+        display: inline-block;
+        line-height: 1;
+        border-radius: 100%;
+        @include transition(0.2s);
+
+        &:hover {
+            background-color: var(--tp-theme-color);
+            color: #fff;
+            opacity: 1;
+            border-color: var(--tp-theme-color);
+        }
+    }
+    &-wrap {
+        position: relative;
+        overflow: hidden;
+        display: block;
+
+        & span {
+            transition: all 0.2s linear;
+            display: block;
+            & i{
+                background-color: transparent;
+                position: relative;
+                bottom: 0;
+                top: 0;
+                @include transform(rotate(-45deg));
+                right: 0;
+                margin-left: 2px;
+            }
+        }
+    }
+    &-y-1 {
+        @include transform(translateY(0%));
+    }
+    &-y-2 {
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        @include transform(translateY(100%));
+    }
+    &-border {
+        border: 1px solid #57595C;
+        padding: 13.5px 34px;
+        color: var(--tp-common-black);
+        font-size: 18px;
+        font-weight: 400;
+        text-transform: capitalize;
+        line-height: 1.5;
+        border-radius: 5px;
+        display: inline-block;
+        font-family: var(--tp-fonts-heading);
+        @include transition(0.3s);
+        & i{
+            @include transform(rotate(-45deg));
+            margin-left: 2px;
+        }
+        &:hover{
+            background-color: var(--tp-theme-orange);
+            color: var(--tp-white);
+            border-color: var(--tp-theme-orange);
+        }
+    }
+    &-200{
+        padding: 16.5px 32px;
+    }
+}
+
+.tp-text-btn {
+    font-size: 18px;
+    color: #0a0e1a;
+    font-family: var(--tp-fonts-heading);
+    @include flexbox();
+    align-items: center;
+    @include transition(0.2s);
+    &:hover{
+        color: var(--tp-theme-orange);
+    }
+    & i {
+        margin-left: 8px;
+        @include transform(rotate(-45deg));
+    }
+    &-white{
+        color: #A3AEC3;
+        @include transition(0.2s);
+        &:hover{
+            color: var(--tp-white);
+        }
+    }
+}
+.circle-icon-btn{
+    height: 60px;
+    width: 60px;
+    background-color: transparent;
+    font-size: 14px;
+    @include flexbox();
+    color: #57595C;
+    align-items: center;
+    justify-content: center;
+    border-radius: 100%;
+    border: 1px solid #57595C;
+    @include transition(0.3s);
+    & i{
+        @include transform(rotate(-45deg));
+    }
+    &:hover{
+        background-color: var(--tp-theme-orange);
+        color: #fff;
+        border-color: var(--tp-theme-orange) ;
+    }
+}
+
+.tp-icon-btn{
+    font-size: 55px;
+    position: relative;
+    color: #57595C;
+    display: inline-block;
+    transition: all 0.3s linear;
+    & span{
+        height: 38px;
+        width: 38px;
+        background: #F8F5FF;
+        display: inline-block;
+        border-radius: 100%;
+        position: absolute;
+        right: 0;
+        z-index: -1;
+        top: 50%;
+        @include transform(translate(25%, -70%));
+        @include transition(0.3s);
+    }
+    &:hover{
+        color: #0A0E1A;
+        & span{
+            background: #ede9f5;
+        }
+    }
+}

@@ -1,0 +1,1 @@
+sass --watch "E:\Learn Files\evento-salim-rana\salim-rana-Envato-project-1-main\assets\scss\main.scss":"E:\Learn Files\evento-salim-rana\salim-rana-Envato-project-1-main\assets\css\main.css"

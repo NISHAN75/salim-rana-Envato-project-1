@@ -1,0 +1,232 @@
+@use '../../utils' as *;
+
+// Footer Separator
+.footer-sep {
+    background-color: #fff;
+    opacity: 0.15;
+    height: 1px;
+}
+
+// Social Links
+.tpfooter-social {
+    @media #{$xs}{
+        padding-left: 0;
+    }
+    a {
+        color: #fff;
+        opacity: 0.7;
+        margin-right: 18px;
+    }
+}
+
+// Footer Widget
+.tp-footer-widget {
+    ul {
+        padding: 0;
+        margin: 0;
+        list-style: none;
+
+        li {
+            margin-bottom: 5px;
+
+            a {
+                font-size: 17px;
+                line-height: 1.88;
+                color: #b1b4ba;
+                @include transition(0.3s);
+                &:hover{
+                    color: var(--tp-theme-orange);
+                }
+            }
+        }
+    }
+}
+
+.tp-footer-widget-title {
+    font-size: 20px;
+    color: #fff;
+}
+
+// Footer Content Links
+.footer-content {
+    a {
+        font-size: 17px;
+        color: #b1b4ba;
+        @include transition(0.3s);
+        &:hover{
+            color: var(--tp-theme-orange);
+        }
+    }
+}
+
+// Footer Contact
+.tp-footer-contact {
+    &-item {
+        span {
+            font-size: 17px;
+            color: #b1b4ba;
+        }
+        h4 {
+            font-size: 30px;
+            color: #fff;
+            @include transition(0.3s);
+            &:hover{
+                color: var(--tp-theme-orange);
+            }
+
+            @media #{$xl}{
+                font-size: 25px;
+            }
+             @media #{$lg , $md , $xs} {
+                font-size: 20px;
+            }
+        }
+    }
+}
+
+// Footer Columns
+.tp-footer-col {
+    &-3 {
+        padding-left: 60px;
+        position: relative;
+        z-index: 1;
+
+        @media#{$xs}  {
+            padding-left: 0;
+        }
+
+        &::before,
+        &::after {
+            content: "";
+            position: absolute;
+            height: 100%;
+            width: 1px;
+            background-color: #fff;
+            opacity: 0.15;
+            top: 0;
+            left: -40px;
+
+            @media #{$md , $xs} {
+                display: none;
+            }
+        }
+
+        &::after {
+            left: auto;
+            right: 30px;
+
+            @media #{$md , $xs} {
+                right: 0;
+            }
+        }
+    }
+
+    &-4 {
+        padding-left: 34px;
+
+        
+         @media #{$lg , $md , $xs} {
+            padding-left: 0;
+        }
+
+        &::before {
+            left: -65px;
+        }
+    }
+}
+
+// Footer Copyright
+.tp-footer-copyright {
+    p {
+        font-size: 17px;
+        color: #b1b4ba;
+        margin-bottom: 0;
+
+        a {
+            font-weight: 500;
+            color: var(--tp-theme-color-2);
+        }
+    }
+}
+
+// Footer Widget Area
+.tp-footer-widget-area {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+}
+
+// Footer Menu
+.tp-footer-menu {
+    ul {
+        li {
+            display: inline-block;
+            padding-left: 33px;
+            margin-left: 33px;
+            position: relative;
+            @media #{$xl}{
+                padding-left: 15px;
+                margin-left: 15px;
+            }
+            @media #{$xs} {
+                padding-left: 10px;
+                margin-left: 10px;
+                margin-bottom: 10px;
+            }
+
+
+
+            &:first-child {
+                padding-left: 0;
+                margin-left: 0;
+
+                &::before {
+                    display: none;
+                }
+            }
+
+            &::before {
+                content: "";
+                position: absolute;
+                height: 13px;
+                width: 1px;
+                background-color: #b1b4ba;
+                left: 0;
+                top: 50%;
+                @include transform(translateY(-50%));
+            }
+        }
+
+        a {
+            font-weight: 500;
+            font-size: 15px;
+            text-transform: uppercase;
+            color: #b1b4ba;
+        }
+    }
+}
+
+// Footer Shapes
+.tp-footer-shape {
+    &-01 {
+        top: 41%;
+        left: 17%;
+        z-index: -1;
+    }
+
+    &-02 {
+        left: 46.5%;
+        top: 15%;
+        z-index: -1;
+    }
+
+    &-03 {
+        right: 12%;
+        bottom: 10%;
+        z-index: -1;
+    }
+
+    &-04 {
+        right: 6%;
+        top: 10%;
+        z-index: -1;
+    }
+}

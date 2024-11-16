@@ -1,0 +1,70 @@
+@use '../../utils' as *;
+
+.tpprice{
+    border-radius: 20px;
+    border: 1px solid transparent;
+    @media #{$md , $xs}{
+        padding:30px 25px;
+     }
+    @include transition(0.2s);
+    &__icon{
+        & span{
+            font-size: 114px;
+            position: relative;
+            z-index: 1;
+            margin-left: 23px;
+            display: inline-flex;
+            & i{
+                display: inline-flex;
+            }
+        }
+        &-shape{
+            position: absolute;
+            top: 0;
+            left: 0;
+            max-width: 81px;
+        }
+    }
+    &__price{
+
+        & h4{
+            font-size: 70px;
+        }
+    }
+    &__title{
+        font-size: 30px;
+    }
+    &__features{
+        list-style: none;
+        padding: 0;
+        margin: 0;
+
+        & li{
+            color: #57595C;
+            margin-bottom: 10px;
+            display: flex;
+            & i{
+                font-size: 18px;
+                margin-right: 10px;
+                margin-top: 4px;
+            }
+            & span{
+                font-size: 17px;
+            }
+        }
+    }
+    &__sep{
+        border-top: 1px solid #57595C;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+    &:hover{
+        border-color: #57595C;
+        & .tp-btn-orange{
+            background-color: var(--tp-theme-color);
+            & i {
+                background-color: #71A2FF;
+            }
+        }
+    }
+}
